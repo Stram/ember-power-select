@@ -9,6 +9,7 @@ export default Component.extend({
   actions: {
     clear(e) {
       e.stopPropagation();
+      e.preventDefault();
       this.get('select').actions.select(null);
     }
   }
